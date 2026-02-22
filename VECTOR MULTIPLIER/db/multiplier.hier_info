@@ -1,0 +1,1206 @@
+|clk_mult
+clk => buff_p[0]~reg0.CLK
+clk => buff_p[1]~reg0.CLK
+clk => buff_p[2]~reg0.CLK
+clk => buff_p[3]~reg0.CLK
+clk => buff_p[4]~reg0.CLK
+clk => buff_p[5]~reg0.CLK
+clk => buff_p[6]~reg0.CLK
+clk => buff_p[7]~reg0.CLK
+clk => buff_p[8]~reg0.CLK
+clk => buff_p[9]~reg0.CLK
+clk => buff_p[10]~reg0.CLK
+clk => buff_p[11]~reg0.CLK
+clk => buff_p[12]~reg0.CLK
+clk => buff_p[13]~reg0.CLK
+clk => buff_p[14]~reg0.CLK
+clk => buff_p[15]~reg0.CLK
+clk => buff_b[0].CLK
+clk => buff_b[1].CLK
+clk => buff_b[2].CLK
+clk => buff_b[3].CLK
+clk => buff_b[4].CLK
+clk => buff_b[5].CLK
+clk => buff_b[6].CLK
+clk => buff_b[7].CLK
+clk => buff_a[0].CLK
+clk => buff_a[1].CLK
+clk => buff_a[2].CLK
+clk => buff_a[3].CLK
+clk => buff_a[4].CLK
+clk => buff_a[5].CLK
+clk => buff_a[6].CLK
+clk => buff_a[7].CLK
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_a.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_b.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+rst => buff_p.OUTPUTSELECT
+a[0] => buff_a.DATAA
+a[1] => buff_a.DATAA
+a[2] => buff_a.DATAA
+a[3] => buff_a.DATAA
+a[4] => buff_a.DATAA
+a[5] => buff_a.DATAA
+a[6] => buff_a.DATAA
+a[7] => buff_a.DATAA
+b[0] => buff_b.DATAA
+b[1] => buff_b.DATAA
+b[2] => buff_b.DATAA
+b[3] => buff_b.DATAA
+b[4] => buff_b.DATAA
+b[5] => buff_b.DATAA
+b[6] => buff_b.DATAA
+b[7] => buff_b.DATAA
+buff_p[0] <= buff_p[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[1] <= buff_p[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[2] <= buff_p[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[3] <= buff_p[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[4] <= buff_p[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[5] <= buff_p[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[6] <= buff_p[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[7] <= buff_p[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[8] <= buff_p[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[9] <= buff_p[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[10] <= buff_p[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[11] <= buff_p[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[12] <= buff_p[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[13] <= buff_p[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[14] <= buff_p[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buff_p[15] <= buff_p[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult
+a[0] => a[0].IN8
+a[1] => a[1].IN8
+a[2] => a[2].IN8
+a[3] => a[3].IN8
+a[4] => a[4].IN8
+a[5] => a[5].IN8
+a[6] => a[6].IN8
+a[7] => a[7].IN8
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+p[0] <= CRA:ROWS[0].row.s
+p[1] <= CRA:ROWS[1].row.s
+p[2] <= CRA:ROWS[2].row.s
+p[3] <= CRA:ROWS[3].row.s
+p[4] <= CRA:ROWS[4].row.s
+p[5] <= CRA:ROWS[5].row.s
+p[6] <= CRA:ROWS[6].row.s
+p[7] <= CRA:ROWS[7].row.s
+p[8] <= CRA:ROWS[7].row.s
+p[9] <= CRA:ROWS[7].row.s
+p[10] <= CRA:ROWS[7].row.s
+p[11] <= CRA:ROWS[7].row.s
+p[12] <= CRA:ROWS[7].row.s
+p[13] <= CRA:ROWS[7].row.s
+p[14] <= CRA:ROWS[7].row.s
+p[15] <= CRA:ROWS[7].row.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[0].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[1].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[2].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[3].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[4].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[5].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[6].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b => b.IN8
+sum_ab[0] => sum_ab[0].IN1
+sum_ab[1] => sum_ab[1].IN1
+sum_ab[2] => sum_ab[2].IN1
+sum_ab[3] => sum_ab[3].IN1
+sum_ab[4] => sum_ab[4].IN1
+sum_ab[5] => sum_ab[5].IN1
+sum_ab[6] => sum_ab[6].IN1
+sum_ab[7] => sum_ab[7].IN1
+cin => c[0].IN1
+s[0] <= FA:FA_ROW[0].fa.s
+s[1] <= FA:FA_ROW[1].fa.s
+s[2] <= FA:FA_ROW[2].fa.s
+s[3] <= FA:FA_ROW[3].fa.s
+s[4] <= FA:FA_ROW[4].fa.s
+s[5] <= FA:FA_ROW[5].fa.s
+s[6] <= FA:FA_ROW[6].fa.s
+s[7] <= FA:FA_ROW[7].fa.s
+cout <= FA:FA_ROW[7].fa.cout
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[0].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[1].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[2].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[3].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[4].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[5].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[6].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clk_mult|multiplier:clk_mult|CRA:ROWS[7].row|FA:FA_ROW[7].fa
+b => ab.IN0
+a => ab.IN1
+sum_ab => s.IN1
+sum_ab => cout.IN1
+sum_ab => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

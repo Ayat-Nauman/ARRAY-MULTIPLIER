@@ -1,0 +1,53 @@
+# Reading pref.tcl
+# do multiplier_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {multiplier.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:47:04 on Jan 11,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+." multiplier.svo 
+# -- Compiling module clk_mult
+# 
+# Top level modules:
+# 	clk_mult
+# End time: 08:47:04 on Jan 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Public/XCELLERIUM/VECTOR\ MULTIPLIER {C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:47:04 on Jan 11,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER" C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv 
+# -- Compiling module clk_mult_tb
+# 
+# Top level modules:
+# 	clk_mult_tb
+# End time: 08:47:04 on Jan 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  clk_mult_tb
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" clk_mult_tb 
+# Start time: 08:47:05 on Jan 11,2026
+# Loading sv_std.std
+# Loading work.clk_mult_tb
+# Loading work.clk_mult
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_clkena
+# Loading altera_ver.dffeas
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# ** Error (suppressible): (vsim-3006) Too many inherited module instance parameters.
+#    Time: 0 ps  Iteration: 0  Instance: /clk_mult_tb File: C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv Line: 17
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./multiplier_run_msim_gate_systemverilog.do PAUSED at line 12
+# End time: 08:47:19 on Jan 11,2026, Elapsed time: 0:00:14
+# Errors: 1, Warnings: 0

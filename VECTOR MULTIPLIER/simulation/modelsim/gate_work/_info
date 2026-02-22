@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/simulation/modelsim
+vclk_mult
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1768103224
+!i10b 1
+!s100 =I0J0ZiKTZ>Qle>`2@=mg3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IU:90<^IoeI4:Vff0?6GPO3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1768103211
+8multiplier.svo
+Fmultiplier.svo
+!i122 0
+L0 32 4968
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1768103224.000000
+!s107 multiplier.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|multiplier.svo|
+!i113 1
+Z7 o-sv -work work
+!s92 -sv -work work +incdir+.
+Z8 tCvgOpt 0
+vclk_mult_tb
+R1
+R2
+!i10b 1
+!s100 hmGP4d[k@Wg12mAA^QNo@0
+R3
+I_[NM_9g>T^GSFz@]3mfYQ0
+R4
+S1
+R0
+w1768102995
+8C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv
+FC:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv
+!i122 1
+L0 3 86
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER|C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv|
+!i113 1
+R7
+!s92 -sv -work work {+incdir+C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER}
+R8

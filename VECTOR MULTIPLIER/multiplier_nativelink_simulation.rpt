@@ -1,0 +1,75 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  c:/intelfpga_lite/20.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/20.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  systemverilog
+Simulation Mode       :  GUI
+Sim Output File       :  multiplier.svo
+Sim SDF file          :  multiplier__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File multiplier_run_msim_gate_systemverilog.do already exists - backing up current file as multiplier_run_msim_gate_systemverilog.do.bak10
+Probing transcript
+ModelSim-Altera Info: # Reading pref.tcl
+ModelSim-Altera Info: # do multiplier_run_msim_gate_systemverilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -sv -work work +incdir+. {multiplier.svo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 08:47:04 on Jan 11,2026
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+." multiplier.svo 
+ModelSim-Altera Info: # -- Compiling module clk_mult
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	clk_mult
+ModelSim-Altera Info: # End time: 08:47:04 on Jan 11,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -sv -work work +incdir+C:/Users/Public/XCELLERIUM/VECTOR\ MULTIPLIER {C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 08:47:04 on Jan 11,2026
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER" C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv 
+ModelSim-Altera Info: # -- Compiling module clk_mult_tb
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	clk_mult_tb
+ModelSim-Altera Info: # End time: 08:47:04 on Jan 11,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  clk_mult_tb
+ModelSim-Altera Info: # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" clk_mult_tb 
+ModelSim-Altera Info: # Start time: 08:47:05 on Jan 11,2026
+ModelSim-Altera Info: # Loading sv_std.std
+ModelSim-Altera Info: # Loading work.clk_mult_tb
+ModelSim-Altera Info: # Loading work.clk_mult
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_io_obuf
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_io_ibuf
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_clkena
+ModelSim-Altera Info: # Loading altera_ver.dffeas
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_lcell_comb
+ModelSim-Altera Info: # ** Error (suppressible): (vsim-3006) Too many inherited module instance parameters.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /clk_mult_tb File: C:/Users/Public/XCELLERIUM/VECTOR MULTIPLIER/clk_mult_tb.sv Line: 17
+ModelSim-Altera Info: # Error loading design
+ModelSim-Altera Info: # Error: Error loading design
+ModelSim-Altera Info: #        Pausing macro execution
+ModelSim-Altera Info: # MACRO ./multiplier_run_msim_gate_systemverilog.do PAUSED at line 12
+ModelSim-Altera Info: # End time: 08:47:19 on Jan 11,2026, Elapsed time: 0:00:14
+ModelSim-Altera Info: # Errors: 1, Warnings: 0
+Info: NativeLink simulation flow was successful
